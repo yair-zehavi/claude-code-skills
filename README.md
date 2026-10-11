@@ -1,8 +1,10 @@
 # claude-code-skills
 
-Three Claude Code skills that turn repeatable editorial and design-review work into a written method the agent follows the same way every time.
+Claude Code skills that turn repeatable marketing-operations work into a written method the agent follows the same way every time. Each one comes from running these jobs for real client accounts: the rules and gotchas are the ones that cost time or money the first time round.
 
 ## Skills
+
+**Content and design**
 
 | Skill | What it does | When to use it |
 |---|---|---|
@@ -10,20 +12,24 @@ Three Claude Code skills that turn repeatable editorial and design-review work i
 | `design-qa` | Runs a review loop on a live web page. A fresh reviewer subagent measures spacing, alignment, overlap and contrast in a browser, reports ranked findings, and the main agent fixes and re-runs. | Taking a built page from "works" to client-ready. |
 | `art-directed-graphic` | A method for client graphics that do not look AI-generated: name a physical medium, generate the art without text, then add typography and logo in HTML. Includes a library of 20 art directions. | Cards, social posts, flyers and posters that need a designed look. |
 
+**Ads and reporting**
+
+| Skill | What it does | When to use it |
+|---|---|---|
+| `marketing-report-accuracy` | A monthly multichannel report pipeline (pull, aggregate, generate, independent reviewer, draft for human review) with the rules that make each number survive a client's own dashboard. | Building or debugging a recurring client performance report. |
+
 ## Install
 
 Copy the skill folders you want into your personal skills directory or a project:
 
 ```
 cp -r skills/design-qa ~/.claude/skills/
-cp -r skills/humanizer-he ~/.claude/skills/
-cp -r skills/art-directed-graphic ~/.claude/skills/
 
 # or per project
-cp -r skills/design-qa your-project/.claude/skills/
+cp -r skills/marketing-report-accuracy your-project/.claude/skills/
 ```
 
-Claude Code picks up each skill from its `SKILL.md` frontmatter. `design-qa` expects the Playwright MCP server to be available.
+Claude Code picks up each skill from its `SKILL.md` frontmatter and loads the reference files next to it only when needed. `design-qa` expects the Playwright MCP server to be available. Scripts inside skill folders use placeholders and read credentials from the environment or stdin; review them before running against a real site or account.
 
 ## humanizer-he
 
