@@ -18,6 +18,12 @@ Claude Code skills that turn repeatable marketing-operations work into a written
 |---|---|---|
 | `marketing-report-accuracy` | A monthly multichannel report pipeline (pull, aggregate, generate, independent reviewer, draft for human review) with the rules that make each number survive a client's own dashboard. | Building or debugging a recurring client performance report. |
 
+**WordPress operations**
+
+| Skill | What it does | When to use it |
+|---|---|---|
+| `wordpress-incident-response` | Defensive response for a compromised site or fleet: render sweep, backdoor hunt, cleanup, credential rotation and hardening, with worked cases including a ClickFix fake-verification attack. | A fake "verify you are human" page, a malware alert, an infection that comes back. |
+
 ## Install
 
 Copy the skill folders you want into your personal skills directory or a project:
