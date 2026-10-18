@@ -16,6 +16,7 @@ Claude Code skills that turn repeatable marketing-operations work into a written
 
 | Skill | What it does | When to use it |
 |---|---|---|
+| `meta-ads-api-campaigns` | Builds Meta campaigns, ad sets, creatives and ads from code with everything created paused, UTMs on every ad, and every write read back. Documents the write traps, such as a creative swap that silently sets the ad live. | Creating or editing anything in a Meta ad account through the API. |
 | `marketing-report-accuracy` | A monthly multichannel report pipeline (pull, aggregate, generate, independent reviewer, draft for human review) with the rules that make each number survive a client's own dashboard. | Building or debugging a recurring client performance report. |
 
 **WordPress operations**
