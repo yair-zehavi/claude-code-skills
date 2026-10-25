@@ -24,6 +24,7 @@ Claude Code skills that turn repeatable marketing-operations work into a written
 | Skill | What it does | When to use it |
 |---|---|---|
 | `wordpress-elementor-automation` | Writes to WordPress and Elementor through REST, WP-CLI and the editor JS API, then proves the change on the rendered page. Covers the cache layers that keep serving old HTML. | Any agent edit to a live WordPress site. |
+| `wordpress-host-migration` | Moves a site from a restricted shared host to a managed cloud host behind Cloudflare: FTP-only export, verified pulls, email DNS, and a gated cutover script with automatic DNS rollback. | Changing hosts without losing leads, mail or rankings. |
 | `wordpress-incident-response` | Defensive response for a compromised site or fleet: render sweep, backdoor hunt, cleanup, credential rotation and hardening, with worked cases including a ClickFix fake-verification attack. | A fake "verify you are human" page, a malware alert, an infection that comes back. |
 
 ## Install
