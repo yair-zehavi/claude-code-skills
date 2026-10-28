@@ -11,6 +11,7 @@ Claude Code skills that turn repeatable marketing-operations work into a written
 | `humanizer-he` | Finds and rewrites AI-sounding patterns in Hebrew text: translated filler, empty marketing phrases, overused verbs, formal register where modern Hebrew fits. | Editing Hebrew copy, articles or emails that read as machine-written. |
 | `design-qa` | Runs a review loop on a live web page. A fresh reviewer subagent measures spacing, alignment, overlap and contrast in a browser, reports ranked findings, and the main agent fixes and re-runs. | Taking a built page from "works" to client-ready. |
 | `art-directed-graphic` | A method for client graphics that do not look AI-generated: name a physical medium, generate the art without text, then add typography and logo in HTML. Includes a library of 20 art directions. | Cards, social posts, flyers and posters that need a designed look. |
+| `ai-image-production` | Routes each image job to the model family that won it in testing, keeps real products faithful with reference editing instead of a LoRA, and runs a manifest-driven pipeline for one subject across many scenes and ad ratios. Includes provider fallback and a scroll-driven video hero built from real photos. | Product shots, people, article covers, multi-ratio ad creatives, image-to-video. |
 
 **Ads and reporting**
 
